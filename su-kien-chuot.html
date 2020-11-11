@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img id="myImage" src="https://media.bongda.com.vn/files/quan.le/2018/06/27/telstar-mechta-01-0016.jpg" width="300" />
+    <p>Click button below to move the image to right</p>
+    <input type="button" value="Click Me" onclick="moveRight()">
+    <script>
+    let bong;
+    bong = document.getElementById('myImage');
+    function init() {
+    bong = document.getElementById('myImage');
+    bong.style.position = 'relative';
+    bong.style.left = '0px';
+    }
+    function moveRight() {
+        bong.style.left = parseInt(bong.style.left) + 10 + 'px';
+    }
+    window.onload=init();
+    </script>
+</form>
+</body>
+</html>
