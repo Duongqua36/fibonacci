@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let KWh;
+    KWh = parseFloat(prompt("tính giá điện cá nhân"));
+    if (KWh > 401){
+        VND = KWh * 2.927
+        alert("số tiền là " + VND);
+    }
+   else if (KWh > 301){
+        VND = KWh * 2.834
+        alert("số tiền là" + VND);
+    }
+   else if (KWh > 201){
+        VND = KWh * 2.536
+        alert("số tiền là" + VND);
+    }
+   else if (KWh > 101){
+        VND = KWh * 2.014
+        alert("số tiền là"+ VND);
+    }
+   else if (KWh > 51){
+        VND = KWh * 1.734
+        alert("số tiền là" + VND);
+    }
+   else if (KWh > 0){
+        VND = KWh * 1.678
+        alert("số tiền là" + VND);
+    }
+</script>
+</body>
+</html>
